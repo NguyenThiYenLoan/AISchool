@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <div class="main__content">
+        <div class="main__content mian ">
             <div class="content__photo">
                 <img src="./img/intro1.png" alt="" class="photo">
             </div>
