@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 40px;
+    margin-left: -20px;
+}
+
+header .back-arrow {
+    color: var(--white-color);
+    font-size: 25px;
+    margin-right: 10px;
+    position: relative;
+    top: 22px;
+}
+
+header .header .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white-color);
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+main .container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main .section {
+    padding: 15px;
+}
+
+main .section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main .device-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
+
+main .device-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+main .device-item:last-child {
+    border-bottom: none;
+}
+
+main .device-info {
+    display: flex;
+    align-items: center;
+}
+
+main .device-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+main .device-name {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+main .device-status {
+    font-size: 12px;
+    color: #888;
+    margin-top: 3px;
+}
+
+main .menu-button {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    main .container {
+        max-width: 800px;
+    }
+
+    main .device-item {
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    main .container {
+        max-width: 1000px;
+    }
+}

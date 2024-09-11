@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header .container {
+    padding: 10px;
+    background-color: #EEFF99; /* Màu nền của khối */
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+header .header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .back-button {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header .buttons button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #CCFF66; /* Màu nền của các nút */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header .buttons button:hover {
+    background-color: #B4E345; /* Màu nền khi rê chuột vào nút */
+}
+
+/* Điều chỉnh kích thước phù hợp cho các màn hình nhỏ */
+@media (max-width: 768px) {
+    header .buttons button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .buttons {
+        display: ruby-text;
+        flex-direction: column;
+    }
+
+    header .buttons button {
+        margin: 5px 0;
+    }
+}
+
+main .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .assignments {
+    padding: 10px;
+}
+
+main .assignment-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s;
+}
+
+main .assignment-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main .assignment-icon {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #4caf50;
+}
+
+main .assignment-details {
+    flex-grow: 1;
+}
+
+main .assignment-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+main .assignment-meta {
+    font-size: 1em;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    main .container {
+        max-width: 90%;
+    }
+}

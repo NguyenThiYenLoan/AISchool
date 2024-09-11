@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header .container {
+    padding: 10px;
+    background-color: #EEFF99; /* Màu nền của khối */
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+header .header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .back-button {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header .buttons button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #CCFF66; /* Màu nền của các nút */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header .buttons button:hover {
+    background-color: #B4E345; /* Màu nền khi rê chuột vào nút */
+}
+
+/* Điều chỉnh kích thước phù hợp cho các màn hình nhỏ */
+@media (max-width: 768px) {
+    header .buttons button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .buttons {
+        display: ruby-text;
+        flex-direction: column;
+    }
+
+    header .buttons button {
+        margin: 5px 0;
+    }
+}
+
+main .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main .section {
+    margin-bottom: 20px;
+}
+
+main .section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+main .button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+main .button {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .button:hover {
+    background-color: #0056b3;
+}
+
+footer .button-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 20px;
+}
+
+footer .button{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    color: black;
+    background-color: #d8f259;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+}

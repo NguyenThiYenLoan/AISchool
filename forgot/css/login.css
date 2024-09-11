@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-size: 66.67%;
+}
+
+header {
+    position: relative; 
+    height: 120px; 
+}
+
+.header {
+    position: absolute; 
+    bottom: 0;
+    left: 10px; 
+    padding: 10px; 
+}
+
+.header i {
+    font-size: 18px; 
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    flex-grow: 1; 
+}
+
+.main__photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main__title {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__title p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+.main__input {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; gap: 20px;
+}
+.main__input input {
+    width: 350px;
+    height: 55px;
+    border-radius: 30px;
+    border: 0.5px solid rgb(190, 189, 189);
+    background-color: #FAFAFA;
+    text-align: left;
+    padding: 20px;
+}
+
+.main__fogotpassword {
+    width: 100%;
+    margin-top: 20px;
+}
+.main__fogotpassword a {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer__button .btn__login {
+    width: 350px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+.footer__button p {
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+.footer__button .btn__createacc {
+    width: 350px;
+    height: 60px;
+    background-color: #FAFAFA;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* CSS CHO TRANG DANGNHAP2.HTML */
+.main__title_small {
+    width: 100%;
+    margin-top: 20px;
+}
+.main__title_small p {
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin-left: 66px;
+    font-weight: bold;
+}
+.main__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main__button .btn{
+    width: 255px;
+    height: 55px;
+    border: 1px solid rgb(163, 162, 162);
+    border-radius: 30px;
+    background-color: #FAFAFA;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* CSS CHO TRANG FOGOTPASSWORD.HTML */
+.main__title_fogotpassword {
+    width: 100%;
+    margin-top: 40px;
+}
+.main__title_fogotpassword p {
+    font-size: 1.4rem;
+    opacity: 0.7;
+    margin-left: 145px;
+    font-weight: bold;
+}
+
+.main__button .btn__next {
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .main__title_fogotpassword p {
+        font-size: 1.1rem;
+        opacity: 0.7;
+        margin-left: -3px;
+        font-weight: bold;
+        text-align: center;
+    } 
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .main__title_fogotpassword p {
+        font-size: 1.4rem;
+        opacity: 0.7;
+        margin-left: 20px;
+        font-weight: bold;
+        text-align: center;
+    } 
+}

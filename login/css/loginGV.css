@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-size: 66.67%;
+}
+
+header {
+    position: relative; 
+    height: 120px; 
+}
+
+header .header {
+    position: absolute; 
+    bottom: 0;
+    left: 10px; 
+    padding: 10px; 
+}
+
+header .header i {
+    font-size: 18px; 
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    flex-grow: 1; 
+}
+
+main .main__photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main .main__title {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main__title p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+main .main__input {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; gap: 20px;
+}
+
+main .main__input input {
+    width: 350px;
+    height: 55px;
+    border-radius: 30px;
+    border: 0.5px solid rgb(190, 189, 189);
+    background-color: #FAFAFA;
+    text-align: left;
+    padding: 20px;
+}
+
+main .main__fogotpassword {
+    width: 100%;
+    margin-top: 20px;
+}
+
+main .main__fogotpassword a {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+main .main__title_fogotpassword {
+    width: 100%;
+    margin-top: 40px;
+}
+main .main__title_fogotpassword p {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-left: 45px;
+    font-weight: bold;
+}
+
+main .main__button .btn__next {
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid rgb(163, 162, 162);
+}
+main .main__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 480px) {
+    main .main__button .btn__next {
+        width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    main .main__input input {
+        height: 50px; /* Điều chỉnh chiều cao nút */
+    }
+
+    main .main__photo img {
+        width: 100px; /* Giảm kích thước ảnh */
+        height: 100px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    main .main__input input, footer .footer__button .btn__login {
+        width: 80%; /* Chiều rộng chiếm 80% màn hình */
+        height: 55px;
+    }
+
+    main .main__photo img {
+        width: 120px; /* Kích thước ảnh vừa đủ cho máy tính bảng */
+        height: 120px;
+    }
+
+    main .main__button .btn__next {
+        width: 545px;
+    }
+}
+@media (min-width: 820px) and (max-width: 1180px) {
+    main .main__button .btn__next {
+        width: 585px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    main .main__button .btn__next {
+        width: 725px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main .main__input input, footer .footer__button .btn__login {
+        width: 70%; /* Chiều rộng giảm xuống để hiển thị cân đối hơn */
+        height: 60px;
+    }
+    
+    main .main__photo img {
+        width: 150px; /* Tăng kích thước ảnh cho iPad Pro */
+        height: 150px;
+    }
+}

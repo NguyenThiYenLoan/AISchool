@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #525bad;
+    padding: 40px;
+    margin-left: -20px;
+}
+
+header .back-arrow {
+    color: white;
+    font-size: 25px;
+    margin-right: 10px;
+    position: relative;
+    top: 23px;
+}
+
+header .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    max-width: 500px;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.schedule div {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.schedule div:last-child {
+    border-right: none;
+}
+
+.schedule .day {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.schedule .time {
+    grid-column: 1;
+    background-color: var(--white-color);
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.schedule .content1 {
+    background-color: var(--white-color);
+}
+
+.schedule .time:last-child {
+    border-bottom: none;
+}
+
+.schedule .content {
+    grid-column: span 5;
+    background-color: #1abc9c;
+}
+
+.schedule .content:nth-child(2) {
+    background-color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .schedule {
+        grid-template-columns: repeat(8, 1fr);
+        max-width: 680px;
+    }
+
+    .schedule .content {
+        grid-column: span 1;
+    }
+
+    .schedule .time {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule .content {
+        grid-column: span 1;
+        padding: 3px;
+    }
+
+    .schedule .day {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .schedule {
+        max-width: 425px;
+    }
+}
+
+.month {
+    padding: 10px 15px;
+    color: var(--text-dark);
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.month ul li {
+    color: var(--text-dark);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+/* Styles for iPad devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .schedule {
+        grid-template-columns: repeat(8, 1fr); /* Adjust the number of columns */
+        max-width: 750px; /* Adjust the maximum width */
+    }
+
+    .schedule .day, .schedule .time {
+        font-size: 14px; /* Adjust the font size */
+        padding: 10px; /* Adjust the padding */
+    }
+
+    .schedule .content {
+        grid-column: span 1; /* Adjust content span */
+        padding: 8px; /* Adjust content padding */
+    }
+}
+
+/* Styles for iPad Pro devices (820px to 1180px) */
+@media (min-width: 820px) and (max-width: 1180px) {
+    .schedule {
+        grid-template-columns: repeat(8, 1fr); /* Adjust the number of columns */
+        max-width: 800px; /* Adjust the maximum width */
+    }
+
+    .schedule .day, .schedule .time {
+        font-size: 14px; /* Adjust the font size */
+        padding: 10px; /* Adjust the padding */
+    }
+
+    .schedule .content {
+        grid-column: span 1; /* Adjust content span */
+        padding: 8px; /* Adjust content padding */
+    }
+}
+
+/* Styles for iPad Pro devices (1024px to 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .schedule {
+        grid-template-columns: repeat(8, 1fr); /* Maintain 8 columns for larger iPads */
+        max-width: 1000px; /* Increase max width for larger iPads */
+    }
+
+    .schedule .day, .schedule .time {
+        font-size: 16px; /* Slightly larger font size for iPad Pro */
+        padding: 12px; /* Increase padding */
+    }
+
+    .schedule .content {
+        grid-column: span 1; /* Adjust content span for each cell */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 390px) {
+    .schedule {
+        grid-template-columns: repeat(8, 1fr);
+        margin: 0;
+        max-width: 391px;
+    }
+
+    .schedule .day, .schedule .time {
+        font-size: 14px;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 430px) {
+    .schedule .day, .schedule .time {
+        font-size: 15px;
+        padding: 2px;
+    }
+    .schedule {
+        grid-template-columns: repeat(8, 1fr);
+        margin: 1px;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 600px) {
+    .schedule {
+        grid-template-columns: repeat(8, 1fr); /* Adjust the number of columns */
+        margin: 10px;
+        max-width: 580px;
+    }
+
+    .schedule .day, .schedule .time {
+        font-size: 17px; /* Adjust the font size */
+        padding: 2px; /* Adjust the padding */
+    }
+
+    .schedule .content {
+        grid-column: span 1; /* Adjust content span */
+        padding: 8px; /* Adjust content padding */
+    }
+}
+@media (min-width: 1024px) {
+    .schedule {
+        max-width: 425px;
+    }
+}

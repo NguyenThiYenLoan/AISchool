@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header .container {
+    padding: 10px;
+    background-color: #EEFF99; /* Màu nền của khối */
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+header .header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .back-button {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+main .card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+main .card-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+main .card-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+main .card-content {
+    flex: 1;
+}
+
+main .card-content h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+main .card-content p {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+main .card-status {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+main .card-status.complete {
+    color: green;
+}
+
+main .card-status.incomplete {
+    color: red;
+}
+
+main .menu-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main .menu-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 160px;
+    right: 0;
+}
+
+main .menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+main .menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+main .menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    main .card {
+        align-items: flex-start;
+    }
+
+    main .card-icon {
+        margin-bottom: 10px;
+    }
+
+    main .menu-button {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    main .menu-content {
+        right: 0;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    main .menu-content {
+        right: 30px;
+        min-width: 100px;
+    }
+}
